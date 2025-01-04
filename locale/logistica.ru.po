@@ -110,8 +110,7 @@ msgstr "Создает предметы по требованию сети. Из
 
 #: api/crafting_supplier.lua:33
 msgid "Excess items, provided as supply. If full, excess will be thrown out."
-msgstr ""
-"Избыток предметов исп. для снабжения. Если полон - излишки будут выброшены."
+msgstr "Избыток предметов исп. для снабжения. Если полон - излишки будут выброшены."
 
 #: api/injector.lua:13
 msgid ""
@@ -472,7 +471,7 @@ msgstr "  Начало: Лавовая печь"
 
 #: guide/guide_content.lua:178
 msgid "  Create a Logistic Network"
-msgstr "  Создание сети Логистики"
+msgstr "  Создание сети Логистики")
 
 #: guide/guide_content.lua:179
 msgid "  Move items from/to other mods"
@@ -2095,7 +2094,7 @@ msgstr "Сильвериновая пластина"
 #: item/storage_upgrade.lua:7
 msgid ""
 "Silverin Storage Upgrade\n"
-"Adds 512 Mass Storage Slot Capacity"
+"Adds 1024 Mass Storage Slot Capacity"
 msgstr ""
 "Сильвериновое улучшение хранилища\n"
 "Добавляет 512 слотов для массового хранилища"
@@ -2103,7 +2102,7 @@ msgstr ""
 #: item/storage_upgrade.lua:14
 msgid ""
 "Diamond Storage Upgrade\n"
-"Adds 1024 Mass Storage Slot Capacity"
+"Adds 2048 Mass Storage Slot Capacity"
 msgstr ""
 "Алмазное улучшение хранилища\n"
 "Добавляет 1024 слота для массового хранилища"
