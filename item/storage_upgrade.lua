@@ -18,7 +18,7 @@ items["logistica:storage_upgrade_2"]= {
 }
 
 items["logistica:storage_upgrade_3"]= {
-  description = "Mythril Storage Upgrade\nAdds 262144 Mass Storage Slot Capacity",
+  description = S("Mythril Storage Upgrade\nAdds 262144 Mass Storage Slot Capacity"),
   storage_upgrade = 262144,
   inventory_image = "logistica_storage_upgrade_3.png",
   stack_max = logistica.stack_max,
