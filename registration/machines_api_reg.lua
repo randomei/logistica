@@ -235,7 +235,7 @@ logistica.register_pump(S("Liquid Pump"), "pump",
 -- Mass Storage
 --------------------------------
 
-logistica.register_mass_storage("mass_storage_basic", S("Mass Storage"), 8, 1024, 4, { 
+logistica.register_mass_storage("mass_storage_basic", S("Mass Storage"), 8, 2048, 4, { 
   "logistica_basic_mass_storage_top.png", "logistica_basic_mass_storage_top.png",
   "logistica_basic_mass_storage.png", "logistica_basic_mass_storage.png",
   "logistica_basic_mass_storage.png", "logistica_basic_mass_storage_front.png"
@@ -267,7 +267,7 @@ logistica.compat_bucket_register_buckets()
 -- Passive Supply Chest
 --------------------------------
 
-logistica.register_supplier(S("Passive Supplier Chest"), "passive_supplier", 16, {
+logistica.register_supplier(S("Passive Supplier Chest"), "passive_supplier", 32, {
       "logistica_passive_supplier_top.png",
       "logistica_passive_supplier_bottom.png",
       "logistica_passive_supplier_side.png^[transformFX",
@@ -293,7 +293,7 @@ logistica.register_trashcan(S("Trashcan"), "trashcan", {
 -- Vaccuum Supply Chest
 --------------------------------
 
-logistica.register_vaccuum_chest(S("Vaccuum Supplier Chest"), "vaccuum_chest", 16, {
+logistica.register_vaccuum_chest(S("Vaccuum Supplier Chest"), "vaccuum_chest", 32, {
   "logistica_vaccuum_top.png",
   "logistica_vaccuum_bottom.png",
   "logistica_vaccuum_side.png",
