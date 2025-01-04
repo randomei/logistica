@@ -110,7 +110,8 @@ msgstr "Создает предметы по требованию сети. Из
 
 #: api/crafting_supplier.lua:33
 msgid "Excess items, provided as supply. If full, excess will be thrown out."
-msgstr "Избыток предметов исп. для снабжения. Если полон - излишки будут выброшены."
+msgstr ""
+"Избыток предметов исп. для снабжения. Если полон - излишки будут выброшены."
 
 #: api/injector.lua:13
 msgid ""
@@ -2106,6 +2107,15 @@ msgid ""
 msgstr ""
 "Алмазное улучшение хранилища\n"
 "Добавляет 1024 слота для массового хранилища"
+
+#: item/storage_upgrade.lua:21
+#, fuzzy
+msgid ""
+"Mythril Storage Upgrade\n"
+"Adds 262144 Mass Storage Slot Capacity"
+msgstr ""
+"Мифриловое улучшение хранилища\n"
+"Добавляет 262144 слотов для массового хранилища"
 
 #: logic/access_point.lua:10
 msgid "No Liquid Storage"
