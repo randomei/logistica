@@ -472,7 +472,7 @@ msgstr "  Начало: Лавовая печь"
 
 #: guide/guide_content.lua:178
 msgid "  Create a Logistic Network"
-msgstr "  Создание сети Логистики")
+msgstr "  Создание сети Логистики"
 
 #: guide/guide_content.lua:179
 msgid "  Move items from/to other mods"
@@ -2098,7 +2098,7 @@ msgid ""
 "Adds 1024 Mass Storage Slot Capacity"
 msgstr ""
 "Сильвериновое улучшение хранилища\n"
-"Добавляет 512 слотов для массового хранилища"
+"Добавляет 1024 слотов для массового хранилища"
 
 #: item/storage_upgrade.lua:14
 msgid ""
@@ -2106,7 +2106,7 @@ msgid ""
 "Adds 2048 Mass Storage Slot Capacity"
 msgstr ""
 "Алмазное улучшение хранилища\n"
-"Добавляет 1024 слота для массового хранилища"
+"Добавляет 2048 слота для массового хранилища"
 
 #: item/storage_upgrade.lua:21
 #, fuzzy

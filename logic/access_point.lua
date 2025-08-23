@@ -130,6 +130,17 @@ local function build_stack_list(pos, playerName)
     elseif count > STACK_MAX_SIZE then
       stack:get_meta():set_string("count_meta", "> "..tostring(STACK_MAX_SIZE))
     end
+    if count > 65535 then
+      local player = minetest.get_player_by_name(playerName)
+      local player_meta = player:get_meta()
+      if player_meta:get_string("logistica_big_stack_name") == item then
+        count = player_meta:get_string("logistica_big_stack_count")
+      else
+        stack:get_meta():set_string("count_meta", tostring(count))
+        count = 65535
+      end
+    end
+    stack:set_count(count)
     listSize = listSize + 1
     itemList[listSize] = stack
   end
