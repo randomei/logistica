@@ -322,10 +322,19 @@ function logistica.access_point_allow_take(inv, listname, index, _stack, player)
       return 0
     end
     local stackMax = stack:get_stack_max()
+    local stack_count = inv:get_stack(listname, index):get_count()
     -- either way, only allow taking up to stack max
     stack:set_count(math.min(stack:get_count(), stackMax))
     -- remove the sometimes manually added count display
     stack:get_meta():set_string("count_meta", "")
+    local player_meta = player:get_meta()
+    if stack:get_count() == 1 and stack_count > 65435 then
+      player_meta:set_string("logistica_big_stack_name", stack:get_name())
+      player_meta:set_int("logistica_big_stack_count", stack_count-1)
+    else
+      player_meta:set_string("logistica_big_stack_name", "")
+    end
+    inv:set_stack(listname, index, stack)
     if stackMax > 1 then
       local taken = ItemStack("")
       local acceptTaken = function(st) taken:add_item(st); return 0 end
@@ -370,6 +379,7 @@ function logistica.access_point_on_inv_move(inv, from_list, from_index, to_list,
 end
 
 function logistica.access_point_on_put(inv, listname, index, stack, player)
+  player:get_meta():set_string("logistica_big_stack_name", "")
   local pos = get_curr_pos(player)
   if not pos then return 0 end
   logistica.load_position(pos)
@@ -422,6 +432,7 @@ end
 
 function logistica.access_point_on_rightclick(pos, node, clicker, itemstack, pointed_thing)
   logistica.try_to_wake_up_network(pos)
+  clicker:get_meta():set_string("logistica_big_stack_name", "")
   show_access_point_formspec(pos, clicker:get_player_name())
 end
 
